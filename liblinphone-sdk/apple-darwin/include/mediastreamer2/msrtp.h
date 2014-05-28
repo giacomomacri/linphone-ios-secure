@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef msrtp_hh
 #define msrtp_hh
 
-#include <mediastreamer2/msfilter.h>
+#include "msfilter.h"
 #include <ortp/ortp.h>
 
 #define MS_RTP_RECV_SET_SESSION			MS_FILTER_METHOD(MS_RTP_RECV_ID,0,RtpSession*)

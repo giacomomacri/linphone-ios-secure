@@ -20,7 +20,7 @@
 #ifndef ortp_events_h
 #define ortp_events_h
 
-#include <ortp/str_utils.h>
+#include "str_utils.h"
 
 typedef mblk_t OrtpEvent;
 

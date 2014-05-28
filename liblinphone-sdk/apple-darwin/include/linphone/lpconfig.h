@@ -25,7 +25,7 @@
 #ifndef LPCONFIG_H
 #define LPCONFIG_H
 
-#include <ortp/port.h>
+#include "port.h"
 
 /**
  * The LpConfig object is used to manipulate a configuration file.

@@ -73,7 +73,7 @@
 
 #include <stdio.h>
 #include <time.h>
-#include <ortp/port.h>
+#include "port.h"
 #include <ortp/stun_udp.h>
 
 #ifdef __APPLE__

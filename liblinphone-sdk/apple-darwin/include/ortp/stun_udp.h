@@ -38,7 +38,7 @@ typedef int socklen_t;
 #endif
 #endif
 
-#include <ortp/port.h>
+#include "port.h"
 
 #if defined(WIN32) || defined(_WIN32_WCE)
 

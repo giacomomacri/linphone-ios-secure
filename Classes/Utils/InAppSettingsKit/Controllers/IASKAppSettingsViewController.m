@@ -27,9 +27,9 @@
 #import "IASKSpecifierValuesViewController.h"
 #import "IASKTextField.h"
 
-static const CGFloat KEYBOARD_ANIMATION_DURATION = 0.3;
-static const CGFloat MINIMUM_SCROLL_FRACTION = 0.2;
-static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
+//static const CGFloat KEYBOARD_ANIMATION_DURATION = 0.3;
+//static const CGFloat MINIMUM_SCROLL_FRACTION = 0.2;
+//static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
 
 static NSString *kIASKCredits = @"Powered by InAppSettingsKit"; // Leave this as-is!!!
 
@@ -446,7 +446,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 	if ((title = [self tableView:tableView titleForHeaderInSection:section])) {
 		CGSize size = [title sizeWithFont:[UIFont boldSystemFontOfSize:[UIFont labelFontSize]] 
 						constrainedToSize:CGSizeMake(tableView.frame.size.width - 2*kIASKHorizontalPaddingGroupTitles, INFINITY)
-							lineBreakMode:UILineBreakModeWordWrap];
+							lineBreakMode:NSLineBreakByWordWrapping];
 		return size.height+kIASKVerticalPaddingGroupTitles;
 	}
 	return 0;
@@ -575,7 +575,9 @@ CGRect IASKCGRectSwap(CGRect rect);
 		} else {
 			textField.autocorrectionType = specifier.autoCorrectionType;
 		}
+        
 		textField.textAlignment = specifier.textAlignment;
+        
 		textField.adjustsFontSizeToFitWidth = specifier.adjustsFontSizeToFitWidth;
 	}
 	else if ([specifier.type isEqualToString:kIASKPSSliderSpecifier]) {

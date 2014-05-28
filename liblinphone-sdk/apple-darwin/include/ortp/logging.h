@@ -26,7 +26,7 @@
 #ifndef ORTP_LOGGING_H
 #define ORTP_LOGGING_H
 
-#include <ortp/port.h>
+#include "port.h"
 
 #ifdef __cplusplus
 extern "C"

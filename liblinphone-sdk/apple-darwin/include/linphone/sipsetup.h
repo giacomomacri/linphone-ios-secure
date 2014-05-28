@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef sipsetup_h
 #define sipsetup_h
 
-#include "mediastreamer2/mscommon.h"
+#include "mscommon.h"
 
 struct _SipSetup;
 
